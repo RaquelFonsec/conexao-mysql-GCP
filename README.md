@@ -57,13 +57,15 @@ Exemplo de Conexão MySQL no Google Colab/Python
 import mysql.connector
 import pandas as pd
 
-# Dados de conexão
+ Dados de conexão
+ 
 host = '34.170.104.203'  # Substitua pelo IP da sua instância MySQL na GCP
 user = 'root'  # Substitua pelo seu nome de usuário MySQL
 password = ''  # Substitua pela sua senha MySQL
 database = 'locadora'  # Nome do seu banco de dados
 
-# Conectando-se ao banco de dados
+Conectando-se ao banco de dados
+
 connection = mysql.connector.connect(
     host=host,
     user=user,
@@ -71,12 +73,14 @@ connection = mysql.connector.connect(
     database=database  # Nome do banco de dados
 )
 
-# Criando o cursor
+ Criando o cursor
+ 
 cursor = connection.cursor()
 
 
 
 Conclusão
+
 Este projeto foi desenvolvido para fornecer insights sobre os dados da locadora de carros e ajudar a entender o comportamento dos clientes e carros de uma locadora por meio de consultas SQL.
 
 O uso de Google Cloud Platform para hospedar o banco de dados MySQL e Google Colab para execução das consultas SQL é uma maneira eficaz de realizar essa análise em nuvem.
